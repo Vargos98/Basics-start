@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body,html{
+  width: 100%;
+  height: 100%;
+}
+.main{
+  width: 70%;
+  margin: auto;
+}
+
+/* Navbar Styling */
+.Navbar{
+  padding: 20px;
+  display: flex;
+  align-items:center ;
+  justify-content: space-between;
+  background: white;
+}
+
+.Navbar img{
+  width: 60px;
+}
+.Navbar .center{
+  display: flex;
+  
+  gap: 10px;
+}
+.Navbar .center a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: 600;
+  font-size: small;
+
+}
+
+.Navbar .right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.Navbar .right h3{
+  font-size: medium;
+  font-weight:500;
+}
+
+.Navbar .right button{
+  border: none;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 50px;
+  background: rgb(204, 136, 204);
+}
+
+.Navbar .right i{
+  opacity: 0;
+}
+
+
+/* Media queries for Navbar */
+@media(max-width:786px){
+  .Navbar{
+   display: flex;
+   width: 100%;
+  }
+  
+  .Navbar img{
+    width: 120px;
+    margin-left: -30px;
+  }
+  
+  .Navbar .center a{
+    display: none;
+  
+  }
+  
+  .Navbar .right h3,
+  .Navbar .right button {
+    display: none; /* hide these only */
+  }
+  .Navbar .right i {
+    opacity: 1;
+    display: block; /* ensure it's shown */
+    font-size: 24px; /* optional styling */
+    cursor: pointer;
+    
+  }
+
+}
+
+
+.middle{
+  width: 100%;
+  height: 100vh;
+  background: rgb(161, 161, 223);
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.middle .top {
+  display: flex;
+  align-items: flex-end; /* Align children to bottom */
+  justify-content: space-between;
+}
+
+.middle .top .left{
+  width: 50%;
+}
+.middle .top .left p{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+
+.middle .right{
+  margin-top: 140px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.slash> p{
+  font-size: 30px;
+}
+
+.right .text-center p{
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(36, 36, 36);
+}
+
+.right .btn button{
+  border: none;
+  padding: 8px 20px;
+  font-weight: 600; 
+  color: white;
+  background: #000;
+  border-radius: 50px;
+}
+.right .btn button span{
+  font-weight: normal; 
+}
+
+@media (max-width:786px){
+  .middle{
+    width: 100%;
+    
+    background: rgb(161, 161, 223);
+    padding: 30px;
+    margin-top: 20px;
+  }
+  
+  .middle .top {
+    display: flex;
+    flex-direction: column;
+   
+   
+  }
+  
+  .middle .top .left{
+    width: 50%;
+  }
+  .middle .top .left p{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  
+  
+  .middle .right{
+    margin-top: 140px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+  
+  .slash> p{
+    font-size: 30px;
+  }
+  
+  .right .text-center p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(36, 36, 36);
+  }
+  
+  .right .btn button{
+    border: none;
+    padding: 8px 20px;
+    font-weight: 600; 
+    color: white;
+    background: #000;
+    border-radius: 50px;
+  }
+  .right .btn button span{
+    font-weight: normal; 
+  }
+}
+

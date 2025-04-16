@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./output.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Responsive Navbar</title>
+  <style>
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-scroll {
+      display: flex;
+      animation: scroll 20s linear infinite;
+      width: fit-content;
+    }
+  </style>
+</head>
+
+<body class="max-w-3xl mx-auto">
+
+  <!-- Navbar -->
+  <nav class="p-4 flex items-center justify-between">
+    <!-- Logo -->
+    <div>
+      <img class="w-12" src="./assets/Logo.png" alt="Logo" />
+    </div>
+
+    <!-- Desktop Links -->
+    <div class="hidden sm:flex">
+      <a class="font-semibold text-sm p-2" href="#">Product</a>
+      <a class="font-semibold text-sm p-2" href="#">Solutions</a>
+      <a class="font-semibold text-sm p-2" href="#">Pricing</a>
+      <a class="font-semibold text-sm p-2" href="#">Developers</a>
+    </div>
+
+    <!-- Desktop Right Section -->
+    <div class="hidden sm:flex items-center gap-4">
+      <h1 class="text-sm font-semibold">FAQ</h1>
+      <button class="text-sm font-semibold px-4 py-2 rounded-full bg-purple-400 hover:bg-purple-500">Get Quote</button>
+    </div>
+
+    <!-- Mobile Menu Icon -->
+    <div class="block sm:hidden">
+      <i class="ri-menu-3-line text-xl cursor-pointer"></i>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-20 flex flex-col sm:flex-row max-w-3xl mx-auto">
+    <div class="left w-full sm:w-1/2">
+      <p class="text-6xl sm:text-7xl ml-3 sm:ml-8 font-medium font-sans leading-[1.1]">
+        Plan.<br>
+        Manage.<br>
+        Build.
+      </p>
+    </div>
+
+    <div class="right w-full sm:w-1/2 py-6 px-2 flex flex-col-reverse ml-3">
+      <div class="flex items-center justify-between">
+        <p class="hidden sm:block text-2xl">/</p>
+        <p class="text-2xl sm:text-sm font-medium text-gray-700 leading-snug sm:leading-tight">
+          Our Difference Is In <br>
+          The Finishing
+        </p>
+        <p class="px-5 py-2 sm:px-4 sm:py-1 text-xl sm:text-xs rounded-full bg-black text-white">
+          Work <i class="ri-arrow-right-line"></i>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Section -->
+  <section class="mt-8 w-[94%] mx-auto h-[250px]">
+    <img class="w-full h-[230px] object-cover rounded-2xl"
+      src="https://img.freepik.com/free-photo/3d-rendering-abstract-black-white-background_23-2150914071.jpg?semt=ais_hybrid&w=740"
+      alt="Background Image" />
+  </section>
+  <!-- Testimonials Section -->
+
+  <!-- Testimonials Section -->
+  <div class="w-[80%] mx-auto overflow-hidden mt-10">
+    <div class="flex gap-8 animate-scroll px-4">
+      <img class="w-28 object-contain" src="./assets/1.png" alt="">
+      <img class="w-28 object-contain" src="./assets/2.png" alt="">
+      <img class="w-28 object-contain" src="./assets/3.png" alt="">
+      <img class="w-28 object-contain" src="./assets/4.png" alt="">
+      <img class="w-28 object-contain" src="./assets/5.png" alt="">
+
+      <!-- Duplicate for seamless scroll -->
+      <img class="w-28 object-contain" src="./assets/1.png" alt="">
+      <img class="w-28 object-contain" src="./assets/2.png" alt="">
+      <img class="w-28 object-contain" src="./assets/3.png" alt="">
+      <img class="w-28 object-contain" src="./assets/4.png" alt="">
+      <img class="w-28 object-contain" src="./assets/5.png" alt="">
+    </div>
+  </div>
+
+
+
+
+  <!-- Text Block -->
+  <section class=" mt-2 px-4 sm:px-8 ">
+    <div class="top">
+      <p class="text-3xl tracking-tight leading-2 font-medium sm:text-4xl sm:font-medium opacity-75">
+        To enhance the growth of your website, it's essential to expedite the release of new pages.
+      </p>
+    </div>
+
+
+
+
+    <div class="sm:flex sm:gap-8 sm:flex-row-reverse sm:mt-10">
+      <div class="ml-1 mt-6 flex flex-col  gap-4 sm:w-[50%]">
+        
+        <h1 class="capitalize font-medium text-xl sm:text-sm">
+          We Received A great amount of work<br> in just 2 weeks timeline!
+        </h1>
+        <h1 class="font-bold text-xl ">Daniel, Design Lead @Google</h1>
+      </div>
+
+      <div class="images flex mt-8  sm:w-[50%] sm:-ml-18 sm:mb-20">
+        <img class="w-14 h-14 object-cover  rounded-full "
+          src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="">
+        <img class="w-14 h-14 object-cover  rounded-full "
+          src="https://plus.unsplash.com/premium_photo-1708110921398-1fc68e98eacc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZWxzfGVufDB8fDB8fHww"
+          alt="">
+        <img class="w-14 h-14 object-cover  rounded-full "
+          src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWxzfGVufDB8fDB8fHww"
+          alt="">
+        <img class="w-14 h-14 object-cover  rounded-full "
+          src="https://plus.unsplash.com/premium_photo-1707932497939-bca3196336f3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D"
+          alt="">
+
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
